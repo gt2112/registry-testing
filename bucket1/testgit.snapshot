@@ -8,14 +8,56 @@
       "flowContents" : {
         "comments" : "",
         "componentType" : "PROCESS_GROUP",
-        "connections" : [ ],
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "300c53eb-8bca-3f5e-8698-c78fef5b62b8",
+            "id" : "2d343ec0-259a-3207-b865-b7591e49037c",
+            "instanceIdentifier" : "c4a5ff4f-018f-1000-ffff-ffffc383166c",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "300c53eb-8bca-3f5e-8698-c78fef5b62b8",
+          "identifier" : "941b54f5-eb77-334b-8b3a-c81b239eff30",
+          "instanceIdentifier" : "c4a60eae-018f-1000-ffff-ffffd6a8d242",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "300c53eb-8bca-3f5e-8698-c78fef5b62b8",
+            "id" : "ef8eae56-4c34-3d8d-8bbf-a07e523d75d2",
+            "instanceIdentifier" : "bb16a313-018f-1000-0000-00007b2d3265",
+            "name" : "GenerateFlowFile",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        } ],
         "controllerServices" : [ ],
         "defaultBackPressureDataSizeThreshold" : "1 GB",
         "defaultBackPressureObjectThreshold" : 10000,
         "defaultFlowFileExpiration" : "0 sec",
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
-        "funnels" : [ ],
+        "funnels" : [ {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "300c53eb-8bca-3f5e-8698-c78fef5b62b8",
+          "identifier" : "2d343ec0-259a-3207-b865-b7591e49037c",
+          "instanceIdentifier" : "c4a5ff4f-018f-1000-ffff-ffffc383166c",
+          "position" : {
+            "x" : 1144.0,
+            "y" : 193.0
+          }
+        } ],
         "identifier" : "300c53eb-8bca-3f5e-8698-c78fef5b62b8",
         "inputPorts" : [ ],
         "instanceIdentifier" : "bb167d91-018f-1000-0000-00006c883865",
