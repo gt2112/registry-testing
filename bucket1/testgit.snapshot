@@ -41,6 +41,39 @@
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "300c53eb-8bca-3f5e-8698-c78fef5b62b8",
+            "id" : "2d343ec0-259a-3207-b865-b7591e49037c",
+            "instanceIdentifier" : "c4a5ff4f-018f-1000-ffff-ffffc383166c",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "300c53eb-8bca-3f5e-8698-c78fef5b62b8",
+          "identifier" : "0420e64a-a3c6-32aa-8494-ab2e20075825",
+          "instanceIdentifier" : "c9c7d3e4-018f-1000-0000-000026f35b16",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "parse.failure", "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "300c53eb-8bca-3f5e-8698-c78fef5b62b8",
+            "id" : "17223df9-851f-36e5-83da-d0eb3b74cf74",
+            "instanceIdentifier" : "c9c603f7-018f-1000-ffff-ffff879e89cd",
+            "name" : "ConsumeKafkaRecord_2_6",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
         } ],
         "controllerServices" : [ ],
         "defaultBackPressureDataSizeThreshold" : "1 GB",
